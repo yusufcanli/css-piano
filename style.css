@@ -1,0 +1,167 @@
+body{
+    background: #cccccc;
+}
+
+.hand{
+   width: 250px;
+    height: 50px;
+    border:30px solid #366fc5;
+    -webkit-box-shadow: 0 0 7px 1px grey;
+    box-shadow: 0 0 7px 1px grey;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+    border-bottom: 0;
+}
+
+.piano{
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 7px 1px grey;
+    box-shadow: 0 0 7px 1px grey;
+    width: 600px;
+    height: 300px;
+    background: #366fc5;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+}
+
+.key{
+    width: 58px;
+    height: 170px;
+    border: 1px solid black;
+    background: whitesmoke;
+    float: left;
+    border-bottom-left-radius: 8%;
+    border-bottom-right-radius: 8%;
+}
+
+.key:focus{
+    outline: 0;
+}
+
+.key:active{
+    background: -webkit-gradient(linear,left top, left bottom,from(#c3c3c3),to(#f5f5f5));
+    background: linear-gradient(#c3c3c3,#f5f5f5);
+}
+
+.sets{
+    height: 150px;
+    width: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.keys{
+    border-top: 10px solid #214986;
+    width: 600px;
+    height: 150px;
+    background: black;
+}
+
+.on{
+    width: 50px;
+    height: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;
+    background: #aeacac;
+    border: 5px solid #383838;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Reset_button.svg/188px-Reset_button.svg.png) no-repeat #d7c5ba;
+    background-size: 25px;
+    background-position: center;
+}
+
+#cn{
+    display: none;
+}
+
+#cn:checked + label > div {
+    border: 5px solid #f06b18;
+    -webkit-box-shadow: 0 0 14px 3px yellow;
+    box-shadow: 0 0 14px 3px yellow;
+    background-color: yellow;
+}
+
+.sp-right{
+    background: -webkit-gradient(linear, left bottom, right top, from(black), color-stop(50%, black), color-stop(50%, #fff), to(#000));
+    background: linear-gradient(to top right, black, black 50%, #fff 50%, #000);
+    background-size: 2px 2px;
+    margin: 20px;
+    width: 200px;
+    border-radius: 15%;
+    border-top-right-radius: 70%;
+}
+
+.sp-left{
+    background: -webkit-gradient(linear, left bottom, right top, from(black), color-stop(50%, black), color-stop(50%, #fff), to(#000));
+    background: linear-gradient(to top right, black, black 50%, #fff 50%, #000);
+    background-size: 2px 2px;
+    margin: 20px;
+    width: 200px;
+    border-radius: 15%;
+    border-top-left-radius: 70%;
+}
+
+.bts{
+    text-align: center;
+    width: 380px;
+    margin-top: 50px;
+}
+
+.bt{
+    float: left;
+    width: 20px;
+    list-style: none;
+    display: block;
+    background: #212121;
+    border-radius: 30%;
+    height: 20px;
+    margin-right: 16px;
+}
+
+btns{
+    width: 600px;
+    text-align: center;
+}
+
+.bt:active{
+    background: #cb751a;
+}
+
+.ky{
+    z-index: 999;
+}
+
+.r-k{
+    -webkit-clip-path: polygon(0% 15%, 0 0, 15% 0%, 75% 0, 75% 70%, 100% 70%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
+    clip-path: polygon(0% 15%, 0 0, 15% 0%, 75% 0, 75% 70%, 100% 70%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
+}
+
+.r-k:focus{
+    outline: 0;
+}
+
+.l-k{
+-webkit-clip-path: polygon(0 70%, 26% 70%, 26% 0, 76% 0, 100% 0, 100% 60%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
+clip-path: polygon(0 70%, 26% 70%, 26% 0, 76% 0, 100% 0, 100% 60%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
+}
+
+.l-k:focus{
+    outline: 0;
+}
+
+.r-l-k{
+    -webkit-clip-path: polygon(0 70%, 24% 70%, 26% 0, 75% 0, 75% 70%, 100% 70%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
+    clip-path: polygon(0 70%, 24% 70%, 26% 0, 75% 0, 75% 70%, 100% 70%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
+}
+
+.r-l-k:focus{
+    outline: 0;
+}
